@@ -3,6 +3,7 @@ import GlobalArticles from "./GlobalArticles";
 export default function Home() {
 
   const[globalData, setGlobalData] = useState([]);
+
  const handleGlobalArticle = async () => {
   let response = await fetch(`https://api.realworld.io/api/articles` , {
 });
@@ -26,7 +27,7 @@ export default function Home() {
         </ul>
       </div>
       <div>
-        <GlobalArticles globalData={globalData}/>
+        <GlobalArticles globalData={globalData} />
       </div>
     </div>
   );

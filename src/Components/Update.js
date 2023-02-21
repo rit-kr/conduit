@@ -34,8 +34,7 @@ export default function Update(props) {
     console.log(responseData);
   }
   return (
-    <div className="register">
-      {/* <Header /> */}
+    <div className="update">
       <h3>Update Details</h3>
       <div>
         <input type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email"></input>
